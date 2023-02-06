@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    font-family: 'lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+  }
+  
+  $red : #ec5242;
+  $grey : #d3d3d3;
+  $black : #272a31;
+  $bg-gray-dark: #3c3f46;
+  $box-shadow : 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+body{
+    font-family: sans-serif lato;
+}
+
+.header{
+    .nav-one{
+        display: flex;
+        justify-content: end;
+        gap: 1.5rem;
+        padding: .3rem;
+        background-color: $bg-gray-dark;
+        padding-right: 15rem;  
+
+        a{
+            color: $grey;
+        }  
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 1rem 15rem 1rem 12rem;   
+
+        .logo{
+            display: flex;
+            flex-direction: row;
+
+            .logo-text{
+                padding-left: .5rem;
+                font-size: 2.5rem;
+                color: $black;
+            }
+        }
+        .fa-bars{
+            display: none;
+        }
+
+        .nav-two{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            color: $bg-gray-dark;
+
+            a{
+                color: $bg-gray-dark;
+                font-size: 1rem;
+
+                &:hover{
+                    color: $red;
+                    letter-spacing: .1rem;
+                }
+            }
+
+            .box{
+                border: 4px solid $red;
+                margin-left: 3.5rem;
+                font-size: 1.5rem;
+                padding: .5rem;
+                color: $red;
+            }
+        }
+
+        .nav-mobile{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:1250px){
+    .header{
+        .nav-one{
+            padding-right: 10rem;
+        }
+        .navbar{
+            padding: .5rem 10rem .5rem 7rem;
+
+            .nav-two{
+                gap: 2rem;
+
+                .box{
+                    font-size: 1.3rem;
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .header{
+        .nav-one{
+            padding-right: 5rem;
+            gap: 1rem;
+        }
+        .navbar{
+            padding: .5rem 5rem .5rem 3rem;
+
+            .logo{
+                align-items: center;
+
+                .logo-text{
+                    font-size: 1.7rem;
+                }
+            }
+            .nav-two{
+                gap: 1.7rem;
+
+                .box{
+                    font-size: 1.3rem;
+                    margin-left: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+
+ @media screen and (max-width:768px) {
+    .header{
+        .nav-one{
+            display: none;
+        }
+        .navbar{
+            .logo{
+                display: none;
+            }
+            
+            .fa-bars{
+                display: inline-block;
+                position: absolute;
+                top: 5%; left: 7%;
+                font-size: 2.3rem;
+                z-index: 1;
+                color: $bg-gray-dark;
+            }
+
+            #btn.active{
+                color: $red;
+            }
+
+            .nav-two{
+                display: none;
+            }
+            .nav-mobile{
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100vh;
+                top: 0; left: -100%; right: 0;
+                background-color: $bg-gray-dark;
+                
+                a{
+                    color: $red;
+                    font-size: 1.5rem;
+
+                    &:hover{
+                        color: $grey;
+                        letter-spacing: .2rem;
+                    }
+                }
+                .box{
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+
+                    &:hover{
+                        color: $grey;
+                        letter-spacing: .2rem;
+                    }
+                }
+            }
+
+            .nav-mobile.active{
+                left: 0;
+            }
+        }
+    }
+ }

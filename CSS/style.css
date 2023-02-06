@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  font-family: "lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+body {
+  font-family: sans-serif lato;
+}
+
+.header .nav-one {
+  display: flex;
+  justify-content: end;
+  gap: 1.5rem;
+  padding: 0.3rem;
+  background-color: #3c3f46;
+  padding-right: 15rem;
+}
+.header .nav-one a {
+  color: #d3d3d3;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 15rem 1rem 12rem;
+}
+.header .navbar .logo {
+  display: flex;
+  flex-direction: row;
+}
+.header .navbar .logo .logo-text {
+  padding-left: 0.5rem;
+  font-size: 2.5rem;
+  color: #272a31;
+}
+.header .navbar .fa-bars {
+  display: none;
+}
+.header .navbar .nav-two {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  color: #3c3f46;
+}
+.header .navbar .nav-two a {
+  color: #3c3f46;
+  font-size: 1rem;
+}
+.header .navbar .nav-two a:hover {
+  color: #ec5242;
+  letter-spacing: 0.1rem;
+}
+.header .navbar .nav-two .box {
+  border: 4px solid #ec5242;
+  margin-left: 3.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: #ec5242;
+}
+.header .navbar .nav-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .header .nav-one {
+    padding-right: 10rem;
+  }
+  .header .navbar {
+    padding: 0.5rem 10rem 0.5rem 7rem;
+  }
+  .header .navbar .nav-two {
+    gap: 2rem;
+  }
+  .header .navbar .nav-two .box {
+    font-size: 1.3rem;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header .nav-one {
+    padding-right: 5rem;
+    gap: 1rem;
+  }
+  .header .navbar {
+    padding: 0.5rem 5rem 0.5rem 3rem;
+  }
+  .header .navbar .logo {
+    align-items: center;
+  }
+  .header .navbar .logo .logo-text {
+    font-size: 1.7rem;
+  }
+  .header .navbar .nav-two {
+    gap: 1.7rem;
+  }
+  .header .navbar .nav-two .box {
+    font-size: 1.3rem;
+    margin-left: 1.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .nav-one {
+    display: none;
+  }
+  .header .navbar .logo {
+    display: none;
+  }
+  .header .navbar .fa-bars {
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    font-size: 2.3rem;
+    z-index: 1;
+    color: #3c3f46;
+  }
+  .header .navbar #btn.active {
+    color: #ec5242;
+  }
+  .header .navbar .nav-two {
+    display: none;
+  }
+  .header .navbar .nav-mobile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    right: 0;
+    background-color: #3c3f46;
+  }
+  .header .navbar .nav-mobile a {
+    color: #ec5242;
+    font-size: 1.5rem;
+  }
+  .header .navbar .nav-mobile a:hover {
+    color: #d3d3d3;
+    letter-spacing: 0.2rem;
+  }
+  .header .navbar .nav-mobile .box {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .header .navbar .nav-mobile .box:hover {
+    color: #d3d3d3;
+    letter-spacing: 0.2rem;
+  }
+  .header .navbar .nav-mobile.active {
+    left: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
