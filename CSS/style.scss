@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 * {
     font-family: 'lato', sans-serif;
@@ -8,7 +8,7 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
+   /* text-transform: capitalize; */
     transition: all 0.2s linear;
   }
   
@@ -19,10 +19,12 @@
   $box-shadow : 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 
 body{
-    font-family: sans-serif lato;
+    font-family: 'lato', sans-serif;
 }
 
 .header{
+    text-transform: capitalize;
+
     .nav-one{
         display: flex;
         justify-content: end;
@@ -87,6 +89,59 @@ body{
     }
 }
 
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding:9rem 15rem 9rem 12rem;
+    background-image:url(/images/1569663.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 88vh;
+
+    .home-content{
+     /*   max-width: 50rem; */
+
+        .greeting{
+            font-size: 2.5rem;
+            color: $red;
+        }
+
+        .title{
+            font-family: 'lato' cocogoose;
+            font-size: 5.2rem;
+            font-weight: 900;
+            line-height: 5rem;
+            color: #99423799;
+            background-image: url(/images/images.jpeg);
+            background-size: contain;
+            background-clip: text;  
+        }
+
+        .content-box{
+            background-color: #f4f3f355;
+            padding: .7rem;
+            margin: 1.3rem 0 1.5rem 0;
+            font-size: 1rem;
+            color: #4d4d4d;
+            border: 2px solid #fff;
+            max-width: 45rem;
+        }
+
+        .venue-details{
+            .date{
+                font-size: 2rem;
+                font-weight: 700;
+                padding-bottom: .7rem;
+            }
+
+            .venue{
+                font-size: 1.5rem;
+            }
+        }
+    }    
+}
+
 @media screen and (max-width:1250px){
     .header{
         .nav-one{
@@ -104,6 +159,9 @@ body{
                 }
             }
         }
+    }
+    .home{
+        padding:9rem 10rem 9rem 7rem;
     }
 }
 
@@ -133,6 +191,22 @@ body{
             }
         }
     }
+
+    .home{
+        padding:9rem 7rem 9rem 3rem;
+
+        .home-content{
+/*            max-width: 40rem;  */
+
+            .greeting{
+                font-size: 2rem;
+            }
+
+            .title{
+                font-size: 4.5rem;
+            }
+        }    
+    }
 }
 
 
@@ -152,7 +226,7 @@ body{
                 top: 5%; left: 7%;
                 font-size: 2.3rem;
                 z-index: 1;
-                color: $bg-gray-dark;
+                color: $grey;
             }
 
             #btn.active{
@@ -197,6 +271,46 @@ body{
 
             .nav-mobile.active{
                 left: 0;
+            }
+        }
+    }
+    .home{
+        margin-top: -1rem;
+        padding:11rem 1rem 9rem 3rem;
+        
+        .home-content{
+            .greeting{
+                font-size: 1.5rem;
+            }
+
+            .title{
+                padding-top: 1rem;
+                font-size: 3.2rem;
+                line-height: 3.3rem;
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width:500px){
+    .home{
+        padding:10rem 1rem 9rem 1.5rem;
+
+        .home-content{
+            width: 100%;
+
+            .title{
+                font-size: 2.3rem;
+                line-height: 3rem;
+            }
+
+            .venue-details{
+                .date{
+                    font-size: 1.5rem;
+                }
+                .venue{
+                    font-size: 1.2rem;
+                }
             }
         }
     }
