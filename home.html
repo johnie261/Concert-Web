@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concert Website</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -14,26 +14,47 @@
     
     <section class="header">
 
-        <navbar class="nav">
-            <ul>
-                <li> <a href="#" class="fab fa-facebook-f"></a> </li>
-                <li> <a href="#" class="fab fa-twitter"></a> </li>
-                <li> <a href="#">English</a> </li>
-                <li> <a href="#"> My Page</a> </li>
-                <li> <a href="#"> Logour</a> </li>
-            </ul>
+        <navbar class="nav-one">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#">English</a>
+            <a href="#"> My Page</a>
+            <a href="#"> Logout</a>
         </navbar>
 
         <div class="navbar">
 
             <div class="logo">
-                <a href="#" class="logo-img">  </a>
+                <a href="#" class="logo-img"> <img src="images/icons8-concert-48 (1).png" alt=""> </a>
+                <a href="#" class="logo-text"><span>e</span>vento</a>
             </div>
+
+
+            <a href="#" class="fas fa-bars" id="btn"></a>
+
+            <navbar class="nav-two">
+                <a href="#about">about</a>
+                <a href="#program">program</a>
+                <a href="#join">join</a>
+                <a href="#sponsor">sponsor</a>
+                <a href="#news">news</a>
+                <a href="#" class="box">E-tour</a>
+            </navbar>
+
+            <navbar class="nav-mobile">
+                <a class="link" href="#home">home</a>
+                <a class="link" href="#program">program</a>
+                <a class="link" href="#artist">artists</a>
+                <a class="link" href="#artist">artists</a>
+                <a class="link" href="#about">about</a>
+                <a class="link" href="#logo">logo</a>
+                <a class="link" href="#past events">past events</a>
+            </navbar>
 
         </div>
 
     </section>
 
-
+<script src="script/main.js"></script>
 </body>
 </html>
