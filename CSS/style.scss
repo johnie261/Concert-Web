@@ -8,7 +8,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-   /* text-transform: capitalize; */
     transition: all 0.2s linear;
   }
   
@@ -20,6 +19,25 @@
 
 body{
     font-family: 'lato', sans-serif;
+    overflow-x: hidden;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title-heading{
+    padding-top: 3rem;
+    color: $grey;
+    padding-bottom: 1rem;
+    }
+
+    .orange-border{
+        width: 2.5rem;
+        height: 1px;
+        background-color: $red;
+    }
 }
 
 .header{
@@ -100,7 +118,6 @@ body{
     height: 88vh;
 
     .home-content{
-     /*   max-width: 50rem; */
 
         .greeting{
             font-size: 2.5rem;
@@ -142,6 +159,56 @@ body{
     }    
 }
 
+.program{
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
+
+    .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap:.5rem; 
+        justify-content: center;
+        padding: 3.5rem 1.5rem 3.5rem 1.5rem;
+        
+        .box{
+            background-color: $bg-gray-dark;
+            color: white;
+            text-align: center;
+            width: 14.3rem;
+            padding: 1.7rem;
+            height: auto;
+            padding-top: 2.5rem;
+
+            img{
+                height: 7rem;
+                width: 7rem;
+            }
+
+            h5{
+                color: $red;
+                padding: 1rem 0 1rem 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .heading-more{
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        color: $grey;
+        padding-bottom: 3.5rem;
+    }
+
+    .invite{
+        display: none;
+    }
+}
+
 @media screen and (max-width:1250px){
     .header{
         .nav-one{
@@ -162,6 +229,19 @@ body{
     }
     .home{
         padding:9rem 10rem 9rem 7rem;
+    }
+    .program{
+        .box-container{
+            .box{
+                height: auto;
+                width: 11rem;
+
+                img{
+                    height: 6rem;
+                    width: 6rem;
+                }
+            }
+        }
     }
 }
 
@@ -196,7 +276,6 @@ body{
         padding:9rem 7rem 9rem 3rem;
 
         .home-content{
-/*            max-width: 40rem;  */
 
             .greeting{
                 font-size: 2rem;
@@ -206,6 +285,29 @@ body{
                 font-size: 4.5rem;
             }
         }    
+    }
+    .program{
+        .box-container{
+            .box{
+                width: 8rem;
+                height: auto;
+                padding: 1.5rem;
+
+                img{
+                    height: 4rem;
+                    width: 4rem;
+                }
+
+                h5{
+                    font-size: 1rem;
+                    padding: .7rem 0 .7rem 0;
+                }
+
+                p{
+                    font-size: .8rem;
+                }
+            }
+        }
     }
 }
 
@@ -290,6 +392,48 @@ body{
             }
         }
     }
+    .program{
+        .heading-more{
+            display: none;
+        }
+
+        .box-container{
+            .box{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                width: 85%;
+                height: auto;
+
+                img{
+                    height: 5rem;
+                    width: 5rem;
+                }
+
+                h5{
+                    font-size: 1rem;
+                }
+
+                p{
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        .invite{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            border: 1px solid red;
+            padding: 1.2rem;
+            font-size: 1.5rem;
+            background-color: $red;
+            color: $grey;
+            margin-bottom: 3.5rem;
+        }
+    }
  }
 
  @media screen and (max-width:500px){
@@ -311,6 +455,13 @@ body{
                 .venue{
                     font-size: 1.2rem;
                 }
+            }
+        }
+    }
+    .program{
+        .box-container{
+            .box{
+                width: 100%;
             }
         }
     }

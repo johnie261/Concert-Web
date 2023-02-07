@@ -7,12 +7,28 @@
   text-decoration: none;
   outline: none;
   border: none;
-  /* text-transform: capitalize; */
   transition: all 0.2s linear;
 }
 
 body {
   font-family: "lato", sans-serif;
+  overflow-x: hidden;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading .title-heading {
+  padding-top: 3rem;
+  color: #d3d3d3;
+  padding-bottom: 1rem;
+}
+.heading .orange-border {
+  width: 2.5rem;
+  height: 1px;
+  background-color: #ec5242;
 }
 
 .header {
@@ -83,9 +99,6 @@ body {
   width: 100%;
   height: 88vh;
 }
-.home .home-content {
-  /*   max-width: 50rem; */
-}
 .home .home-content .greeting {
   font-size: 2.5rem;
   color: #ec5242;
@@ -119,6 +132,50 @@ body {
   font-size: 1.5rem;
 }
 
+.program {
+  background-color: #272a31;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: start;
+}
+.program .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 3.5rem 1.5rem 3.5rem 1.5rem;
+}
+.program .box-container .box {
+  background-color: #3c3f46;
+  color: white;
+  text-align: center;
+  width: 14.3rem;
+  padding: 1.7rem;
+  height: auto;
+  padding-top: 2.5rem;
+}
+.program .box-container .box img {
+  height: 7rem;
+  width: 7rem;
+}
+.program .box-container .box h5 {
+  color: #ec5242;
+  padding: 1rem 0 1rem 0;
+  font-size: 1.2rem;
+}
+.program .heading-more {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color: #d3d3d3;
+  padding-bottom: 3.5rem;
+}
+.program .invite {
+  display: none;
+}
+
 @media screen and (max-width: 1250px) {
   .header .nav-one {
     padding-right: 10rem;
@@ -135,6 +192,14 @@ body {
   }
   .home {
     padding: 9rem 10rem 9rem 7rem;
+  }
+  .program .box-container .box {
+    height: auto;
+    width: 11rem;
+  }
+  .program .box-container .box img {
+    height: 6rem;
+    width: 6rem;
   }
 }
 @media screen and (max-width: 991px) {
@@ -161,14 +226,27 @@ body {
   .home {
     padding: 9rem 7rem 9rem 3rem;
   }
-  .home .home-content {
-    /*            max-width: 40rem;  */
-  }
   .home .home-content .greeting {
     font-size: 2rem;
   }
   .home .home-content .title {
     font-size: 4.5rem;
+  }
+  .program .box-container .box {
+    width: 8rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+  .program .box-container .box img {
+    height: 4rem;
+    width: 4rem;
+  }
+  .program .box-container .box h5 {
+    font-size: 1rem;
+    padding: 0.7rem 0 0.7rem 0;
+  }
+  .program .box-container .box p {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -239,6 +317,39 @@ body {
     font-size: 3.2rem;
     line-height: 3.3rem;
   }
+  .program .heading-more {
+    display: none;
+  }
+  .program .box-container .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 85%;
+    height: auto;
+  }
+  .program .box-container .box img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .program .box-container .box h5 {
+    font-size: 1rem;
+  }
+  .program .box-container .box p {
+    font-size: 0.8rem;
+  }
+  .program .invite {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    border: 1px solid red;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    background-color: #ec5242;
+    color: #d3d3d3;
+    margin-bottom: 3.5rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .home {
@@ -256,5 +367,8 @@ body {
   }
   .home .home-content .venue-details .venue {
     font-size: 1.2rem;
+  }
+  .program .box-container .box {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
