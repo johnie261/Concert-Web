@@ -20,6 +20,8 @@
 body{
     font-family: 'lato', sans-serif;
     overflow-x: hidden;
+    background-color: #f4f3f372;
+    box-sizing: border-box;
 }
 
 .heading{
@@ -29,13 +31,14 @@ body{
 
     .title-heading{
     padding-top: 3rem;
+    font-size: 1.5rem;
     color: $grey;
     padding-bottom: 1rem;
     }
 
     .orange-border{
         width: 2.5rem;
-        height: 1px;
+        height: 1.3px;
         background-color: $red;
     }
 }
@@ -61,6 +64,7 @@ body{
         align-items: center;
         background-color: #fff;
         padding: 1rem 15rem 1rem 12rem;   
+        box-shadow: $box-shadow;
 
         .logo{
             display: flex;
@@ -209,7 +213,123 @@ body{
     }
 }
 
-@media screen and (max-width:1250px){
+.artist{
+
+    .heading{
+        .title-heading{
+            color: $black;
+        }
+    }
+
+    .artist-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3rem;
+        padding: 1.5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 3.5rem;
+
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .images{
+                width: 13rem;
+
+                img{
+                    height: 12rem;
+                    width: 13rem;
+                }
+            }
+            .content{ 
+               width: 23.7rem;
+               padding: 0 1rem;
+
+               .name{
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+                    color: $black;
+               }
+
+               .about{
+                    font-style: italic;
+                    font-size: 1.1rem;
+                    color: $red;
+                    padding: .5rem 0;
+               }
+
+               .grey-border{
+                    width: 2.5rem;
+                    height: 1.3px;
+                    background-color: $grey;
+                    margin: 0.4rem 0;
+               }
+
+               .desc{
+                color: $black;
+                font-size: 1.2rem;
+               }
+            }
+        }
+    }
+    .btns{
+        display:none;
+    }
+
+}
+.partner{
+    .partner-container{
+        background-color: $bg-gray-dark;
+
+        .partner-logo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.3rem;
+            padding: 2rem;
+            width: 100%;
+
+            img{
+                height: 6rem;
+                width: 7rem;
+
+                &:nth-child(1){
+                    width: 10rem;
+                    height: 4rem;
+                }
+
+                &:nth-child(2){
+                    width: 10rem;
+                    height: 5rem;
+                }
+            }
+        }
+    }
+}
+.footer{
+    .content{
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        .footer-one{
+            font-size: 1.7rem;
+        }
+
+        .footer-two{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media screen and (max-width:1260px){
     .header{
         .nav-one{
             padding-right: 10rem;
@@ -239,6 +359,37 @@ body{
                 img{
                     height: 6rem;
                     width: 6rem;
+                }
+            }
+        }
+    }
+    .artist{
+        .artist-container{
+            padding: 1.5rem;
+
+            .box{
+                .images{
+                    width: 9rem;
+
+                    img{
+                        height: 9rem;
+                        width: 9rem;
+                    }
+                }
+                .content{
+                    width: 17.5rem;
+
+                    .name{
+                        font-size: 1.3rem;
+                    }
+
+                    .about{
+                        font-size: .9rem;
+                    }
+
+                    .desc{
+                        font-size: 1rem;
+                    }
                 }
             }
         }
@@ -305,6 +456,59 @@ body{
 
                 p{
                     font-size: .8rem;
+                }
+            }
+        }
+    }
+    .artist{
+        .artist-container{
+            padding: 1.3rem;
+
+            .box{
+                .images{
+                    width: 8rem;
+
+                    img{
+                        height: 8rem;
+                        width: 8rem;
+                    }
+                }
+                .content{
+                    width: 13rem;
+
+                    .name{
+                        font-size: 1.2rem;
+                    }
+
+                    .about{
+                        font-size: .8rem;
+                    }
+
+                    .desc{
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+    .partner{
+        .partner-container{
+            .partner-logo{
+                gap: 1rem;
+
+                img{
+                    height: 4.3rem;
+                    width: 5.3rem;
+
+                    &:nth-child(1){
+                        width: 8rem;
+                        height: 3rem;
+                    }
+
+                    &:nth-child(2){
+                        width: 8rem;
+                        height: 4rem;
+                    }
                 }
             }
         }
@@ -434,6 +638,68 @@ body{
             margin-bottom: 3.5rem;
         }
     }
+    .artist{
+        .artist-container{
+
+            .box{
+                align-items: flex-start;
+                width: 100%;
+                display: none;
+
+                &:nth-child(1),
+                &:nth-child(2){
+                    display: flex;
+                }
+
+                .images{
+                    width: 11rem;
+
+                    img{
+                        width: 11rem;
+                        height: 9rem;
+                    }
+                }
+                .content{
+                    width: 15rem;
+                }
+            }
+        }
+        .btns{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 2.5rem;
+
+            #load-more{
+                display: flex;
+                justify-content: center;
+                width: 70%;
+                font-size: 1rem;
+                padding: .7rem;
+                border: 1px solid $grey;
+
+                span{
+                    padding-left: .5rem;
+                    color: $red;
+                }
+            }
+
+            #see-less{
+                display: none;
+                background: #fff;
+                text-transform: capitalize;
+                font-size: 1rem;
+                text-decoration: underline;
+                color: $red;
+
+                &:hover{
+                    color: $black;
+                    letter-spacing: .2rem;
+                }
+            }
+        }
+    }
  }
 
  @media screen and (max-width:500px){
@@ -462,6 +728,59 @@ body{
         .box-container{
             .box{
                 width: 100%;
+            }
+        }
+    }
+    .artist{
+        .artist-container{
+
+            .box{
+                width: 100%;
+                justify-content: center;
+
+                .images{
+                    width: 9rem;
+
+                    img{
+                    /*    width: 9rem;
+                        height: 7rem;  */
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .content{
+                    width: 18rem;
+                    width: 53%;
+                    padding:0 .5rem;
+                    padding-right: 0;
+
+                    .name{
+                        font-size: 1rem;
+                   }
+    
+                   .about{
+                        font-size: .7rem;
+                        padding: .2rem 0;
+                   }
+    
+                   .desc{
+                    font-size: .8rem;
+                   }
+                }
+            }
+        }
+    }
+    .footer{
+        .content{
+            gap: 1.5rem;
+            justify-content: center;
+    
+            .footer-one{
+                font-size: 1.3rem;
+            }
+    
+            .footer-two{
+                font-size: 1.1rem;
             }
         }
     }
