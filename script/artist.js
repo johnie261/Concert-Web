@@ -82,8 +82,8 @@ artistContainer.forEach((box) => {
 
 let currentItem = 2;
 loadMore.addEventListener('click', () => {
- const cards = document.querySelectorAll('.artist .artist-container .box');
-  for (let i = currentItem; i <= currentItem + 4; i++) {
+  const cards = document.querySelectorAll('.artist .artist-container .box');
+  for (let i = currentItem; i <= currentItem + 4; i += 1) {
     cards[i].style.display = 'flex';
     loadMore.style.display = 'none';
     seeLess.style.display = 'flex';
@@ -92,8 +92,8 @@ loadMore.addEventListener('click', () => {
 });
 
 seeLess.addEventListener('click', () => {
-const cards = document.querySelectorAll('.artist .artist-container .box');
-  for (let i = currentItem; i <= currentItem + 4; i++) {
+  const cards = document.querySelectorAll('.artist .artist-container .box');
+  for (let i = currentItem; i <= currentItem + 4; i += 1) {
     cards[i].style.display = 'none';
     loadMore.style.display = 'flex';
     seeLess.style.display = 'none';
