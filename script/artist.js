@@ -82,7 +82,6 @@ artistContainer.forEach((box) => {
 
 let currentItem = 2;
 loadMore.addEventListener('click', () => {
- // const cards = [...document.querySelectorAll('.artist .artist-container .box')];
  const cards = document.querySelectorAll('.artist .artist-container .box');
   for (let i = currentItem; i <= currentItem + 4; i++) {
     cards[i].style.display = 'flex';
@@ -93,6 +92,11 @@ loadMore.addEventListener('click', () => {
 });
 
 seeLess.addEventListener('click', () => {
-  loadMore.style.display = 'flex';
-  seeLess.style.display = 'none';
+const cards = document.querySelectorAll('.artist .artist-container .box');
+  for (let i = currentItem; i <= currentItem + 4; i++) {
+    cards[i].style.display = 'none';
+    loadMore.style.display = 'flex';
+    seeLess.style.display = 'none';
+  }
+  currentItem += 4;
 });
