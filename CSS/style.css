@@ -770,6 +770,10 @@ body {
   .logo .logo-container .logo {
     padding: 1rem 2rem;
   }
+  .footer {
+    color: #272a31;
+    background-color: #d3d3d3;
+  }
 }
 @media screen and (max-width: 500px) {
   .home {
