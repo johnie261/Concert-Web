@@ -274,6 +274,164 @@ body {
   font-size: 1.4rem;
 }
 
+.home .home-content .heading-about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.home .home-content .heading-about .title {
+  font-size: 4rem;
+}
+.home .home-content .heading-about .greeting {
+  display: none;
+}
+.home .home-content .heading-about .orange-border {
+  width: 2.5rem;
+  height: 1.3px;
+  background-color: #ec5242;
+  margin-top: 1.5rem;
+}
+.home .home-content .home-about {
+  margin-top: 1.7rem;
+  text-align: center;
+  padding: 1.7rem 4rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  background-color: rgba(244, 243, 243, 0.4470588235);
+  color: #3c3f46;
+  border: 1px solid #d3d3d3;
+}
+.home .home-content .contact-about {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.home .home-content .contact-about .text {
+  color: #3c3f46;
+}
+.home .home-content .contact-about .email {
+  color: #272a31;
+  text-decoration: underline;
+  padding-top: 0.4rem;
+}
+
+.logo .logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem 0;
+  border: 1px solid #d3d3d3;
+}
+.logo .logo-container .orange-border {
+  width: 2.5rem;
+  height: 1.3px;
+  background-color: #ec5242;
+  margin: 1.5rem 0;
+}
+.logo .logo-container .text-contanier {
+  color: #3c3f46;
+  text-align: center;
+  font-size: 1rem;
+}
+.logo .logo-container .text-contanier .hide {
+  display: none;
+}
+.logo .logo-container .logo {
+  border: 1px solid #d3d3d3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+  padding: 1.5rem 3.5rem;
+}
+.logo .logo-container .logo .logo-img img {
+  width: 4rem;
+}
+.logo .logo-container .logo .logo-text {
+  padding-left: 0.5rem;
+  font-size: 2.5rem;
+  color: #272a31;
+}
+
+.past-events .events-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.2rem 0;
+}
+.past-events .events-container .orange-border {
+  width: 2.5rem;
+  height: 1.3px;
+  background-color: #ec5242;
+  margin: 1.5rem 0;
+}
+.past-events .events-container .text {
+  color: #3c3f46;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.past-events .events-container .pastEvents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.past-events .events-container .pastEvents .event-one {
+  width: 27rem;
+  height: 16rem;
+  background-size: cover;
+  background-image: url(https://img.freepik.com/premium-photo/happy-people-dance-nightclub-party-concert_31965-14393.jpg?w=2000);
+}
+.past-events .events-container .pastEvents .event-one .overlay {
+  width: 27rem;
+  height: 16rem;
+  background: rgba(236, 83, 66, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d3d3d3;
+}
+.past-events .events-container .pastEvents .event-one .overlay .year {
+  font-size: 2rem;
+  font-weight: 750;
+}
+.past-events .events-container .pastEvents .event-one .overlay .place {
+  font-size: 1.2rem;
+}
+.past-events .events-container .pastEvents .event-two {
+  width: 27rem;
+  height: 16rem;
+  background-size: cover;
+  background-image: url(https://i0.wp.com/blog.epollresearch.com/wp-content/uploads/2017/12/Concert-generic.jpg?resize=640%2C360&ssl=1);
+}
+.past-events .events-container .pastEvents .event-two .overlay {
+  width: 27rem;
+  height: 16rem;
+  background: rgba(236, 83, 66, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d3d3d3;
+}
+.past-events .events-container .pastEvents .event-two .overlay .year {
+  font-size: 2rem;
+  font-weight: 750;
+}
+.past-events .events-container .pastEvents .event-two .overlay .place {
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 1260px) {
   .header .nav-one {
     padding-right: 10rem;
@@ -320,6 +478,13 @@ body {
   }
   .artist .artist-container .box .content .desc {
     font-size: 1rem;
+  }
+  .home .home-content .heading-about .title {
+    font-size: 3.8rem;
+  }
+  .home .home-content .home-about {
+    padding: 1.7rem 3rem;
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 991px) {
@@ -404,6 +569,29 @@ body {
   .partner .partner-container .partner-logo img:nth-child(2) {
     width: 8rem;
     height: 4rem;
+  }
+  .home .home-content .heading-about .title {
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+    padding-top: 4rem;
+  }
+  .home .home-content .home-about {
+    padding: 1.7rem 2.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .home .home-content .contact-about .email {
+    padding-top: 0.3rem;
+  }
+  .past-events .events-container .pastEvents .event-one,
+  .past-events .events-container .pastEvents .event-two {
+    width: 21rem;
+    height: 11rem;
+  }
+  .past-events .events-container .pastEvents .event-one .overlay,
+  .past-events .events-container .pastEvents .event-two .overlay {
+    width: 21rem;
+    height: 11rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -556,6 +744,32 @@ body {
     color: #272a31;
     letter-spacing: 0.2rem;
   }
+  .home .home-content .heading-about .greeting {
+    display: inline;
+    margin-bottom: -1.7rem;
+  }
+  .home .home-content .heading-about .title {
+    font-size: 2.3rem;
+    line-height: 3.3rem;
+    padding-top: 2.5rem;
+  }
+  .home .home-content .home-about {
+    padding: 1rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .home .home-content .contact-about {
+    margin-top: 2rem;
+  }
+  .logo .logo-container .text-contanier .show {
+    display: none;
+  }
+  .logo .logo-container .text-contanier .hide {
+    display: inline;
+  }
+  .logo .logo-container .logo {
+    padding: 1rem 2rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .home {
@@ -615,5 +829,25 @@ body {
   }
   .footer .content .footer-two {
     font-size: 1.1rem;
+  }
+  .home .home-content .heading-about .greeting {
+    margin-bottom: -2rem;
+  }
+  .home .home-content .heading-about .title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  .home .home-content .contact-about .text {
+    color: #272a31;
+  }
+  .past-events .events-container .pastEvents .event-one,
+  .past-events .events-container .pastEvents .event-two {
+    width: 18.5rem;
+    height: 9.5rem;
+  }
+  .past-events .events-container .pastEvents .event-one .overlay,
+  .past-events .events-container .pastEvents .event-two .overlay {
+    width: 18.5rem;
+    height: 9.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

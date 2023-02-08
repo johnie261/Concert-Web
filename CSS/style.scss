@@ -17,6 +17,12 @@
   $bg-gray-dark: #3c3f46;
   $box-shadow : 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 
+@mixin orange{
+    width: 2.5rem;
+    height: 1.3px;
+    background-color: $red;
+}
+
 body{
     font-family: 'lato', sans-serif;
     overflow-x: hidden;
@@ -37,9 +43,7 @@ body{
     }
 
     .orange-border{
-        width: 2.5rem;
-        height: 1.3px;
-        background-color: $red;
+        @include orange();
     }
 }
 
@@ -329,6 +333,191 @@ body{
     }
 }
 
+//about styling starts
+
+.home{
+    .home-content{
+        .heading-about{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            .title{
+                font-size: 4rem;
+            }
+
+            .greeting{
+                display: none;
+            }
+
+            .orange-border{
+                @include orange();
+                margin-top: 1.5rem;
+            }
+        }
+        .home-about{
+            margin-top: 1.7rem;
+            text-align: center;
+            padding: 1.7rem 4rem;
+            line-height: 2rem;
+            font-size: 1.5rem;
+            background-color: #f4f3f372;
+            color: $bg-gray-dark;
+            border: 1px solid $grey;
+        }
+        .contact-about{
+            text-align: center;
+            margin-top: 3rem;
+            padding: .5rem;
+            font-size: 1rem;
+
+            .text{
+                color: $bg-gray-dark;
+            }
+            .email{
+                color: $black;
+                text-decoration: underline;
+                padding-top: .4rem;
+            }
+        }
+    }
+}
+.logo{
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3.2rem 0;
+        border: 1px solid $grey;
+
+        .orange-border{
+            @include orange();
+            margin: 1.5rem 0;
+        }
+
+        .text-contanier{
+            color: $bg-gray-dark;
+            text-align: center;
+            font-size: 1rem;
+            .hide{
+                display: none;
+            }
+        }
+        .logo{
+            border: 1px solid $grey;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem 0;
+            padding: 1.5rem 3.5rem;
+
+            .logo-img{
+                img{
+                    width: 4rem;
+                }
+            }
+    
+            .logo-text{
+                padding-left: .5rem;
+                font-size: 2.5rem;
+                color: $black;
+        
+            }
+        }
+        
+    }
+}
+.past-events{
+
+    @mixin overlay {
+        width: 27rem;
+        height: 16rem;
+        background: rgba(236, 83, 66, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $grey;
+      }
+
+      @mixin year{
+        font-size: 2rem;
+        font-weight: 750;
+      }
+
+      @mixin image{
+        width: 27rem;
+        height: 16rem;
+        background-size: cover;
+      }
+
+    .events-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3.2rem 0;
+
+        .orange-border{
+            @include orange();
+            margin: 1.5rem 0;
+        }
+
+        .text{
+            color: $bg-gray-dark;
+            text-align: center;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pastEvents{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+
+            .event-one{
+                @include image();
+                background-image: url(https://img.freepik.com/premium-photo/happy-people-dance-nightclub-party-concert_31965-14393.jpg?w=2000);
+
+                .overlay{
+                    @include overlay();
+                    .year{
+                        @include year();
+                    }
+                    .place{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .event-two{
+                @include image();
+                background-image: url(https://i0.wp.com/blog.epollresearch.com/wp-content/uploads/2017/12/Concert-generic.jpg?resize=640%2C360&ssl=1);
+            
+                .overlay{
+                    @include overlay();
+                    .year{
+                        @include year();
+                    }
+                    .place{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            
+            
+        }
+    }
+}
+//about styling stops
+
 @media screen and (max-width:1260px){
     .header{
         .nav-one{
@@ -394,6 +583,23 @@ body{
             }
         }
     }
+
+    //about styling starts
+    .home{
+        .home-content{
+            .heading-about{
+                .title{
+                    font-size: 3.8rem;
+                }
+            }
+            .home-about{
+                padding: 1.7rem 3rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    //about styling stops
+
 }
 
 @media screen and (max-width:991px) {
@@ -513,8 +719,47 @@ body{
             }
         }
     }
-}
 
+    //about styling starts
+    .home{
+        .home-content{
+            .heading-about{
+                .title{
+                    font-size: 3.3rem;
+                    line-height: 3.5rem;
+                    padding-top: 4rem;
+                }
+            }
+            .home-about{
+                padding: 1.7rem 2.5rem;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            .contact-about{
+                .email{
+                    padding-top: .3rem;
+                }
+            }
+        }
+    }
+    .past-events{
+        .events-container{
+            .pastEvents{
+                .event-one,
+                .event-two{
+                    width: 21rem;
+                    height: 11rem;
+
+                    .overlay{
+                        width: 21rem;
+                        height: 11rem;
+                    }
+                }
+            }
+        }
+    }
+    //about styling stops
+}
 
  @media screen and (max-width:768px) {
     .header{
@@ -700,6 +945,48 @@ body{
             }
         }
     }
+    //about styling starts
+    .home{
+        .home-content{
+            .heading-about{
+                .greeting{
+                    display: inline;
+                    margin-bottom: -1.7rem;
+                }
+
+                .title{
+                    font-size: 2.3rem;
+                    line-height: 3.3rem;
+                    padding-top: 2.5rem;
+                }
+            }
+            .home-about{
+                padding: 1rem 1rem;
+                font-size: .9rem;
+                line-height: 1.4;
+            }
+            .contact-about{
+                margin-top: 2rem;
+            }
+        }
+    }
+    .logo{
+        .logo-container{
+            .text-contanier{
+                .show{
+                    display: none;
+                }
+                .hide{
+                    display: inline;
+                }
+            }
+            .logo{
+                padding: 1rem 2rem;
+            }
+        }
+    }
+    
+    //about styling stops
  }
 
  @media screen and (max-width:500px){
@@ -781,6 +1068,44 @@ body{
     
             .footer-two{
                 font-size: 1.1rem;
+            }
+        }
+    }
+
+    //about styling starts
+    .home{
+        .home-content{
+            .heading-about{
+                .greeting{
+                    margin-bottom: -2rem;
+                }
+
+                .title{
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                }
+            }
+            .contact-about{
+                .text{
+                    color: $black;
+                }
+            }
+        }
+    }
+    //about styling stops
+    .past-events{
+        .events-container{
+            .pastEvents{
+                .event-one,
+                .event-two{
+                    width: 18.5rem;
+                    height: 9.5rem;
+
+                    .overlay{
+                        width: 18.5rem;
+                        height: 9.5rem;
+                    }
+                }
             }
         }
     }
