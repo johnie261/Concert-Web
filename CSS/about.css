@@ -1,0 +1,20 @@
+
+.footer {
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+
+.partner {
+  display: none;
+}
+
+@media screen and (max-width: 742px) {
+  .partner {
+    display: inline-block;
+  }
+
+  .footer {
+    background-color: #f4f3f372;
+    color: #272a31;
+  }
+}
