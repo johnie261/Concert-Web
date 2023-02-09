@@ -128,6 +128,7 @@ body {
   font-weight: 900;
   line-height: 5rem;
   color: rgba(153, 66, 55, 0.6);
+  color: #ec5242;
   background-image: url(/images/images.jpeg);
   background-size: contain;
   -webkit-background-clip: text;
