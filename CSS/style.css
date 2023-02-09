@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
-
 * {
   font-family: "lato", sans-serif;
   margin: 0;
@@ -23,14 +22,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .heading .title-heading {
   padding-top: 3rem;
   font-size: 1.5rem;
   color: #d3d3d3;
   padding-bottom: 1rem;
 }
-
 .heading .orange-border {
   width: 2.5rem;
   height: 1.3px;
@@ -40,7 +37,6 @@ body {
 .header {
   text-transform: capitalize;
 }
-
 .header .nav-one .list-one {
   list-style: none;
   display: flex;
@@ -50,11 +46,9 @@ body {
   background-color: #3c3f46;
   padding-right: 15rem;
 }
-
 .header .nav-one .list-one a {
   color: #d3d3d3;
 }
-
 .header .navbar {
   display: flex;
   justify-content: space-between;
@@ -62,22 +56,18 @@ body {
   background-color: #fff;
   padding: 1rem 15rem 1rem 12rem;
 }
-
 .header .navbar .logo {
   display: flex;
   flex-direction: row;
 }
-
 .header .navbar .logo .logo-text {
   padding-left: 0.5rem;
   font-size: 2.5rem;
   color: #272a31;
 }
-
 .header .navbar .fa-bars {
   display: none;
 }
-
 .header .navbar .nav-two .list-two {
   list-style: none;
   display: flex;
@@ -85,17 +75,14 @@ body {
   gap: 3rem;
   color: #3c3f46;
 }
-
 .header .navbar .nav-two .list-two a {
   color: #3c3f46;
   font-size: 1rem;
 }
-
 .header .navbar .nav-two .list-two a:hover {
   color: #ec5242;
   letter-spacing: 0.1rem;
 }
-
 .header .navbar .nav-two .list-two .box {
   border: 4px solid #ec5242;
   margin-left: 3.5rem;
@@ -103,7 +90,6 @@ body {
   padding: 0.5rem;
   color: #ec5242;
 }
-
 .header .navbar .nav-mobile {
   display: none;
 }
@@ -113,18 +99,14 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   padding: 9rem 15rem 9rem 12rem;
-  background-image: url(/images/1569663.jpg);
-  background-image: url(https://cdn.pixabay.com/photo/2017/08/07/21/56/events-2608315_960_720.jpg);
   background-image: url(https://media.istockphoto.com/id/521792915/vector/blue-musical-note-background.jpg?s=612x612&w=0&k=20&c=WEzXsH6vl9PdjApHOHCcv5T8vY0nlifx5rdbL1aUPLc=);
   background-size: cover;
   width: 100%;
 }
-
 .home .home-content .greeting {
   font-size: 2.5rem;
   color: #ec5242;
 }
-
 .home .home-content .title {
   font-size: 5.2rem;
   font-weight: 900;
@@ -134,7 +116,6 @@ body {
   background-size: contain;
   -webkit-background-clip: text;
 }
-
 .home .home-content .content-box {
   background-color: rgba(244, 243, 243, 0.3333333333);
   padding: 0.7rem;
@@ -144,13 +125,11 @@ body {
   border: 2px solid #fff;
   max-width: 45rem;
 }
-
 .home .home-content .venue-details .date {
   font-size: 2rem;
   font-weight: 700;
   padding-bottom: 0.7rem;
 }
-
 .home .home-content .venue-details .venue {
   font-size: 1.5rem;
 }
@@ -163,7 +142,6 @@ body {
   align-items: center;
   align-self: start;
 }
-
 .program .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -171,7 +149,6 @@ body {
   justify-content: center;
   padding: 3.5rem 1.5rem 3.5rem 1.5rem;
 }
-
 .program .box-container .box {
   background-color: #3c3f46;
   color: white;
@@ -181,18 +158,15 @@ body {
   height: auto;
   padding-top: 2.5rem;
 }
-
 .program .box-container .box img {
   height: 7rem;
   width: 7rem;
 }
-
 .program .box-container .box h5 {
   color: #ec5242;
   padding: 1rem 0 1rem 0;
   font-size: 1.2rem;
 }
-
 .program .heading-more {
   display: flex;
   justify-content: center;
@@ -200,7 +174,6 @@ body {
   color: #d3d3d3;
   padding-bottom: 3.5rem;
 }
-
 .program .invite {
   display: none;
 }
@@ -208,7 +181,6 @@ body {
 .artist .heading .title-heading {
   color: #272a31;
 }
-
 .artist .artist-container {
   display: flex;
   flex-wrap: wrap;
@@ -219,52 +191,43 @@ body {
   padding-top: 2.5rem;
   padding-bottom: 3.5rem;
 }
-
 .artist .artist-container .box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .artist .artist-container .box .images {
   width: 13rem;
 }
-
 .artist .artist-container .box .images img {
   height: 12rem;
   width: 13rem;
 }
-
 .artist .artist-container .box .content {
   width: 23.7rem;
   padding: 0 1rem;
 }
-
 .artist .artist-container .box .content .name {
   font-size: 1.5rem;
   text-transform: capitalize;
   color: #272a31;
 }
-
 .artist .artist-container .box .content .about {
   font-style: italic;
   font-size: 1.1rem;
   color: #ec5242;
   padding: 0.5rem 0;
 }
-
 .artist .artist-container .box .content .grey-border {
   width: 2.5rem;
   height: 1.3px;
   background-color: #d3d3d3;
   margin: 0.4rem 0;
 }
-
 .artist .artist-container .box .content .desc {
   color: #272a31;
   font-size: 1.2rem;
 }
-
 .artist .btns {
   display: none;
 }
@@ -272,7 +235,6 @@ body {
 .partner .partner-container {
   background-color: #3c3f46;
 }
-
 .partner .partner-container .partner-logo .list-logo {
   list-style: none;
   display: flex;
@@ -283,32 +245,26 @@ body {
   padding: 2rem;
   width: 100%;
 }
-
 .partner .partner-container .partner-logo .list-logo li {
   height: 6rem;
   width: 7rem;
 }
-
 .partner .partner-container .partner-logo .list-logo li img {
   height: 6rem;
   width: 7rem;
 }
-
 .partner .partner-container .partner-logo .list-logo li:nth-child(1) {
   width: 10rem;
   height: 4rem;
 }
-
 .partner .partner-container .partner-logo .list-logo li:nth-child(1) img {
   height: 4rem;
   width: 10rem;
 }
-
 .partner .partner-container .partner-logo .list-logo li:nth-child(2) {
   width: 10rem;
   height: 5rem;
 }
-
 .partner .partner-container .partner-logo .list-logo li:nth-child(2) img {
   height: 4rem;
   width: 10rem;
@@ -324,11 +280,9 @@ body {
   border: 1px solid;
   padding-bottom: 4rem;
 }
-
 .footer .content .footer-one {
   font-size: 1.7rem;
 }
-
 .footer .content .footer-two {
   font-size: 1.4rem;
 }
@@ -341,22 +295,18 @@ body {
   text-align: center;
   justify-content: center;
 }
-
 .home .home-content .heading-about .title {
   font-size: 4rem;
 }
-
 .home .home-content .heading-about .greeting {
   display: none;
 }
-
 .home .home-content .heading-about .orange-border {
   width: 2.5rem;
   height: 1.3px;
   background-color: #ec5242;
   margin-top: 1.5rem;
 }
-
 .home .home-content .home-about {
   margin-top: 1.7rem;
   text-align: center;
@@ -367,18 +317,15 @@ body {
   color: #3c3f46;
   border: 1px solid #d3d3d3;
 }
-
 .home .home-content .contact-about {
   text-align: center;
   margin-top: 3rem;
   padding: 0.5rem;
   font-size: 1rem;
 }
-
 .home .home-content .contact-about .text {
   color: #3c3f46;
 }
-
 .home .home-content .contact-about .email {
   color: #272a31;
   text-decoration: underline;
@@ -393,28 +340,23 @@ body {
   padding: 3.2rem 0;
   border: 1px solid #d3d3d3;
 }
-
 .logo .logo-container .orange-border {
   width: 2.5rem;
   height: 1.3px;
   background-color: #ec5242;
   margin: 1.5rem 0;
 }
-
 .logo .logo-container .logo-title {
   font-size: 1.3rem;
 }
-
 .logo .logo-container .text-contanier {
   color: #3c3f46;
   text-align: center;
   font-size: 1rem;
 }
-
 .logo .logo-container .text-contanier .hide {
   display: none;
 }
-
 .logo .logo-container .logo {
   border: 1px solid #d3d3d3;
   display: flex;
@@ -424,11 +366,9 @@ body {
   margin: 1.5rem 0;
   padding: 1.5rem 3.5rem;
 }
-
 .logo .logo-container .logo .logo-img img {
   width: 4rem;
 }
-
 .logo .logo-container .logo .logo-text {
   padding-left: 0.5rem;
   font-size: 2.5rem;
@@ -442,25 +382,21 @@ body {
   justify-content: center;
   padding: 3.2rem 0;
 }
-
 .past-events .events-container .events-title {
   font-size: 1.3rem;
 }
-
 .past-events .events-container .orange-border {
   width: 2.5rem;
   height: 1.3px;
   background-color: #ec5242;
   margin: 1.5rem 0;
 }
-
 .past-events .events-container .text {
   color: #3c3f46;
   text-align: center;
   font-size: 1rem;
   margin-bottom: 1.5rem;
 }
-
 .past-events .events-container .pastEvents {
   display: flex;
   flex-wrap: wrap;
@@ -468,14 +404,12 @@ body {
   gap: 1.5rem;
   padding: 1rem;
 }
-
 .past-events .events-container .pastEvents .event-one {
   width: 27rem;
   height: 16rem;
   background-size: cover;
   background-image: url(https://img.freepik.com/premium-photo/happy-people-dance-nightclub-party-concert_31965-14393.jpg?w=2000);
 }
-
 .past-events .events-container .pastEvents .event-one .overlay {
   width: 27rem;
   height: 16rem;
@@ -486,23 +420,19 @@ body {
   align-items: center;
   color: #d3d3d3;
 }
-
 .past-events .events-container .pastEvents .event-one .overlay .year {
   font-size: 2rem;
   font-weight: 750;
 }
-
 .past-events .events-container .pastEvents .event-one .overlay .place {
   font-size: 1.2rem;
 }
-
 .past-events .events-container .pastEvents .event-two {
   width: 27rem;
   height: 16rem;
   background-size: cover;
   background-image: url(https://i0.wp.com/blog.epollresearch.com/wp-content/uploads/2017/12/Concert-generic.jpg?resize=640%2C360&ssl=1);
 }
-
 .past-events .events-container .pastEvents .event-two .overlay {
   width: 27rem;
   height: 16rem;
@@ -513,12 +443,10 @@ body {
   align-items: center;
   color: #d3d3d3;
 }
-
 .past-events .events-container .pastEvents .event-two .overlay .year {
   font-size: 2rem;
   font-weight: 750;
 }
-
 .past-events .events-container .pastEvents .event-two .overlay .place {
   font-size: 1.2rem;
 }
@@ -527,245 +455,192 @@ body {
   .header .nav-one {
     padding-right: 10rem;
   }
-
   .header .navbar {
     padding: 0.5rem 10rem 0.5rem 7rem;
   }
-
   .header .navbar .nav-two .list-two {
     gap: 2rem;
   }
-
   .header .navbar .nav-two .list-two .box {
     font-size: 1.3rem;
     margin-left: 2rem;
   }
-
   .home {
     padding: 9rem 10rem 9rem 7rem;
   }
-
   .program .box-container .box {
     height: auto;
     width: 11rem;
   }
-
   .program .box-container .box img {
     height: 6rem;
     width: 6rem;
   }
-
   .artist .artist-container {
     padding: 1.5rem;
   }
-
   .artist .artist-container .box .images {
     width: 9rem;
   }
-
   .artist .artist-container .box .images img {
     height: 9rem;
     width: 9rem;
   }
-
   .artist .artist-container .box .content {
     width: 17.5rem;
   }
-
   .artist .artist-container .box .content .name {
     font-size: 1.3rem;
   }
-
   .artist .artist-container .box .content .about {
     font-size: 0.9rem;
   }
-
   .artist .artist-container .box .content .desc {
     font-size: 1rem;
   }
-
   .home .home-content .heading-about .title {
     font-size: 3.8rem;
   }
-
   .home .home-content .home-about {
     padding: 1.7rem 3rem;
     font-size: 1.3rem;
   }
 }
-
 @media screen and (max-width: 991px) {
   .header .nav-one {
     padding-right: 5rem;
     gap: 1rem;
   }
-
   .header .navbar {
     padding: 0.5rem 5rem 0.5rem 3rem;
   }
-
   .header .navbar .logo {
     align-items: center;
   }
-
   .header .navbar .logo .logo-text {
     font-size: 1.7rem;
   }
-
   .header .navbar .nav-two .list-two {
     gap: 1.7rem;
   }
-
   .header .navbar .nav-two .list-two .box {
     font-size: 1.3rem;
     margin-left: 1.7rem;
   }
-
   .home {
     padding: 9rem 7rem 9rem 3rem;
   }
-
   .home .home-content .greeting {
     font-size: 2rem;
   }
-
   .home .home-content .title {
     font-size: 4.5rem;
   }
-
   .program .box-container .box {
     width: 8rem;
     height: auto;
     padding: 1.5rem;
   }
-
   .program .box-container .box img {
     height: 4rem;
     width: 4rem;
   }
-
   .program .box-container .box h5 {
     font-size: 1rem;
     padding: 0.7rem 0 0.7rem 0;
   }
-
   .program .box-container .box p {
     font-size: 0.8rem;
   }
-
   .artist .artist-container {
     padding: 1.3rem;
   }
-
   .artist .artist-container .box .images {
     width: 8rem;
   }
-
   .artist .artist-container .box .images img {
     height: 8rem;
     width: 8rem;
   }
-
   .artist .artist-container .box .content {
     width: 13rem;
   }
-
   .artist .artist-container .box .content .name {
     font-size: 1.2rem;
   }
-
   .artist .artist-container .box .content .about {
     font-size: 0.8rem;
   }
-
   .artist .artist-container .box .content .desc {
     font-size: 0.8rem;
   }
-
   .partner .partner-container .partner-logo .list-logo {
     gap: 1rem;
   }
-
   .partner .partner-container .partner-logo .list-logo li {
     height: 4.3rem;
     width: 5.3rem;
   }
-
   .partner .partner-container .partner-logo .list-logo li img {
     height: 4.3rem;
     width: 5.3rem;
   }
-
   .partner .partner-container .partner-logo .list-logo li:nth-child(1) {
     width: 8rem;
     height: 3rem;
   }
-
   .partner .partner-container .partner-logo .list-logo li:nth-child(1) img {
     height: 3rem;
     width: 8rem;
   }
-
   .partner .partner-container .partner-logo .list-logo li:nth-child(2) {
     width: 8rem;
     height: 4rem;
   }
-
   .partner .partner-container .partner-logo .list-logo li:nth-child(2) img {
     height: 4rem;
     width: 8rem;
   }
-
   .footer .content {
     gap: 1.5rem;
   }
-
   .footer .content .footer-one {
     font-size: 1.4rem;
   }
-
   .footer .content .footer-two {
     font-size: 1.2rem;
   }
-
   .home .home-content .heading-about .title {
     font-size: 3.3rem;
     line-height: 3.5rem;
     padding-top: 4rem;
   }
-
   .home .home-content .home-about {
     padding: 1.7rem 2.5rem;
     font-size: 1rem;
     line-height: 1.5;
   }
-
   .home .home-content .contact-about .email {
     padding-top: 0.3rem;
   }
-
   .past-events .events-container .pastEvents .event-one,
   .past-events .events-container .pastEvents .event-two {
     width: 21rem;
     height: 11rem;
   }
-
   .past-events .events-container .pastEvents .event-one .overlay,
   .past-events .events-container .pastEvents .event-two .overlay {
     width: 21rem;
     height: 11rem;
   }
 }
-
 @media screen and (max-width: 768px) {
   .header .nav-one {
     display: none;
   }
-
   .header .navbar .logo {
     display: none;
   }
-
   .header .navbar .fa-bars {
     display: inline-block;
     position: absolute;
@@ -775,15 +650,12 @@ body {
     z-index: 1;
     color: #3c3f46;
   }
-
   .header .navbar #btn.active {
     color: #ec5242;
   }
-
   .header .navbar .nav-two {
     display: none;
   }
-
   .header .navbar .nav-mobile {
     position: fixed;
     display: flex;
@@ -798,60 +670,48 @@ body {
     right: 0;
     background-color: #3c3f46;
   }
-
   .header .navbar .nav-mobile .mobile-link {
     list-style: none;
   }
-
   .header .navbar .nav-mobile .mobile-link li {
     padding-top: 2rem;
     text-align: center;
   }
-
   .header .navbar .nav-mobile a {
     color: #ec5242;
     font-size: 1.5rem;
   }
-
   .header .navbar .nav-mobile a:hover {
     color: #d3d3d3;
     letter-spacing: 0.2rem;
   }
-
   .header .navbar .nav-mobile .box {
     border: none;
     padding: 0;
     margin: 0;
   }
-
   .header .navbar .nav-mobile .box:hover {
     color: #d3d3d3;
     letter-spacing: 0.2rem;
   }
-
   .header .navbar .nav-mobile.active {
     left: 0;
   }
-
   .home {
     margin-top: -1rem;
     padding: 11rem 1rem 9rem 3rem;
   }
-
   .home .home-content .greeting {
     font-size: 1.5rem;
   }
-
   .home .home-content .title {
     padding-top: 1rem;
     font-size: 3.2rem;
     line-height: 3.3rem;
   }
-
   .program .heading-more {
     display: none;
   }
-
   .program .box-container .box {
     display: flex;
     flex-direction: row;
@@ -861,20 +721,16 @@ body {
     width: 85%;
     height: auto;
   }
-
   .program .box-container .box img {
     height: 5rem;
     width: 5rem;
   }
-
   .program .box-container .box h5 {
     font-size: 1rem;
   }
-
   .program .box-container .box p {
     font-size: 0.8rem;
   }
-
   .program .invite {
     display: flex;
     justify-content: end;
@@ -886,31 +742,24 @@ body {
     color: #d3d3d3;
     margin-bottom: 3.5rem;
   }
-
   .artist .artist-container .box {
     align-items: flex-start;
     width: 100%;
     display: none;
   }
-
-  .artist .artist-container .box:nth-child(1),
-  .artist .artist-container .box:nth-child(2) {
+  .artist .artist-container .box:nth-child(1), .artist .artist-container .box:nth-child(2) {
     display: flex;
   }
-
   .artist .artist-container .box .images {
     width: 11rem;
   }
-
   .artist .artist-container .box .images img {
     width: 11rem;
     height: 9rem;
   }
-
   .artist .artist-container .box .content {
     width: 15rem;
   }
-
   .artist .btns {
     display: flex;
     flex-direction: column;
@@ -918,7 +767,6 @@ body {
     justify-content: center;
     padding-bottom: 2.5rem;
   }
-
   .artist .btns #load-more {
     display: flex;
     justify-content: center;
@@ -927,12 +775,10 @@ body {
     padding: 0.7rem;
     border: 1px solid #d3d3d3;
   }
-
   .artist .btns #load-more span {
     padding-left: 0.5rem;
     color: #ec5242;
   }
-
   .artist .btns #see-less {
     display: none;
     background: #fff;
@@ -941,142 +787,113 @@ body {
     text-decoration: underline;
     color: #ec5242;
   }
-
   .artist .btns #see-less:hover {
     color: #272a31;
     letter-spacing: 0.2rem;
   }
-
   .home .home-content .heading-about .greeting {
     display: inline;
     margin-bottom: -1.7rem;
   }
-
   .home .home-content .heading-about .title {
     font-size: 2.3rem;
     line-height: 3.3rem;
     padding-top: 2.5rem;
   }
-
   .home .home-content .home-about {
     padding: 1rem 1rem;
     font-size: 0.9rem;
     line-height: 1.4;
   }
-
   .home .home-content .contact-about {
     margin-top: 2rem;
   }
-
   .logo .logo-container .text-contanier .show {
     display: none;
   }
-
   .logo .logo-container .text-contanier .hide {
     display: inline;
   }
-
   .logo .logo-container .logo {
     padding: 1rem 2rem;
   }
 }
-
 @media screen and (max-width: 500px) {
   .home {
     padding: 10rem 1rem 9rem 1.5rem;
   }
-
   .home .home-content {
     width: 100%;
   }
-
   .home .home-content .title {
     font-size: 2.3rem;
     line-height: 3rem;
   }
-
   .home .home-content .venue-details .date {
     font-size: 1.5rem;
   }
-
   .home .home-content .venue-details .venue {
     font-size: 1.2rem;
   }
-
   .program .box-container .box {
     width: 100%;
   }
-
   .artist .artist-container .box {
     width: 100%;
     justify-content: center;
   }
-
   .artist .artist-container .box .images {
     width: 9rem;
   }
-
   .artist .artist-container .box .images img {
     /*    width: 9rem;
                 height: 7rem;  */
     width: 100%;
     height: auto;
   }
-
   .artist .artist-container .box .content {
     width: 18rem;
     width: 53%;
     padding: 0 0.5rem;
     padding-right: 0;
   }
-
   .artist .artist-container .box .content .name {
     font-size: 1rem;
   }
-
   .artist .artist-container .box .content .about {
     font-size: 0.7rem;
     padding: 0.2rem 0;
   }
-
   .artist .artist-container .box .content .desc {
     font-size: 0.8rem;
   }
-
   .footer .content {
     gap: 1.5rem;
   }
-
   .footer .content .footer-one {
     font-size: 1.1rem;
   }
-
   .footer .content .footer-two {
     font-size: 1rem;
   }
-
   .home .home-content .heading-about .greeting {
     margin-bottom: -2rem;
   }
-
   .home .home-content .heading-about .title {
     font-size: 1.7rem;
     line-height: 2rem;
   }
-
   .home .home-content .contact-about .text {
     color: #272a31;
   }
-
   .past-events .events-container .pastEvents .event-one,
   .past-events .events-container .pastEvents .event-two {
     width: 18.5rem;
     height: 9.5rem;
   }
-
   .past-events .events-container .pastEvents .event-one .overlay,
   .past-events .events-container .pastEvents .event-two .overlay {
     width: 18.5rem;
     height: 9.5rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */
