@@ -50,16 +50,20 @@ body {
 .header {
   text-transform: capitalize;
 
-  .nav-one {
-    display: flex;
-    justify-content: end;
-    gap: 1.5rem;
-    padding: 0.3rem;
-    background-color: $bg-gray-dark;
-    padding-right: 15rem;
 
-    a {
-      color: $grey;
+  .nav-one {
+    .list-one {
+      list-style: none;
+      display: flex;
+      justify-content: end;
+      gap: 1.5rem;
+      padding: 0.3rem;
+      background-color: $bg-gray-dark;
+      padding-right: 15rem;
+
+      a {
+        color: $grey;
+      }
     }
   }
 
@@ -69,7 +73,6 @@ body {
     align-items: center;
     background-color: #fff;
     padding: 1rem 15rem 1rem 12rem;
-    box-shadow: $box-shadow;
 
     .logo {
       display: flex;
@@ -87,27 +90,30 @@ body {
     }
 
     .nav-two {
-      display: flex;
-      align-items: center;
-      gap: 3rem;
-      color: $bg-gray-dark;
-
-      a {
+      .list-two {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
         color: $bg-gray-dark;
-        font-size: 1rem;
 
-        &:hover {
-          color: $red;
-          letter-spacing: 0.1rem;
+        a {
+          color: $bg-gray-dark;
+          font-size: 1rem;
+
+          &:hover {
+            color: $red;
+            letter-spacing: 0.1rem;
+          }
         }
-      }
 
-      .box {
-        border: 4px solid $red;
-        margin-left: 3.5rem;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        color: $red;
+        .box {
+          border: 4px solid $red;
+          margin-left: 3.5rem;
+          font-size: 1.5rem;
+          padding: 0.5rem;
+          color: $red;
+        }
       }
     }
 
@@ -123,9 +129,11 @@ body {
   gap: 1.5rem;
   padding: 9rem 15rem 9rem 12rem;
   background-image: url(/images/1569663.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/07/21/56/events-2608315_960_720.jpg);
+  // background-image: url(https://cdn.pixabay.com/photo/2017/08/01/22/57/perform-2568458_960_720.jpg);
+  background-image: url(https://media.istockphoto.com/id/521792915/vector/blue-musical-note-background.jpg?s=612x612&w=0&k=20&c=WEzXsH6vl9PdjApHOHCcv5T8vY0nlifx5rdbL1aUPLc=);
   background-size: cover;
   width: 100%;
-  height: 88vh;
 
   .home-content {
     .greeting {
@@ -290,26 +298,44 @@ body {
     background-color: $bg-gray-dark;
 
     .partner-logo {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 1.3rem;
-      padding: 2rem;
-      width: 100%;
+      .list-logo {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3rem;
+        padding: 2rem;
+        width: 100%;
 
-      img {
-        height: 6rem;
-        width: 7rem;
+        li {
+          height: 6rem;
+          width: 7rem;
 
-        &:nth-child(1) {
-          width: 10rem;
-          height: 4rem;
-        }
+          img {
+            height: 6rem;
+            width: 7rem;
+          }
 
-        &:nth-child(2) {
-          width: 10rem;
-          height: 5rem;
+          &:nth-child(1) {
+            width: 10rem;
+            height: 4rem;
+
+            img {
+              height: 4rem;
+              width: 10rem;
+            }
+          }
+
+          &:nth-child(2) {
+            width: 10rem;
+            height: 5rem;
+
+            img {
+              height: 4rem;
+              width: 10rem;
+            }
+          }
         }
       }
     }
@@ -551,11 +577,13 @@ body {
       padding: 0.5rem 10rem 0.5rem 7rem;
 
       .nav-two {
-        gap: 2rem;
+        .list-two {
+          gap: 2rem;
 
-        .box {
-          font-size: 1.3rem;
-          margin-left: 2rem;
+          .box {
+            font-size: 1.3rem;
+            margin-left: 2rem;
+          }
         }
       }
     }
@@ -649,11 +677,13 @@ body {
       }
 
       .nav-two {
-        gap: 1.7rem;
+        .list-two {
+          gap: 1.7rem;
 
-        .box {
-          font-size: 1.3rem;
-          margin-left: 1.7rem;
+          .box {
+            font-size: 1.3rem;
+            margin-left: 1.7rem;
+          }
         }
       }
     }
@@ -733,20 +763,37 @@ body {
   .partner {
     .partner-container {
       .partner-logo {
-        gap: 1rem;
+        .list-logo {
+          gap: 1rem;
 
-        img {
-          height: 4.3rem;
-          width: 5.3rem;
+          li {
+            height: 4.3rem;
+            width: 5.3rem;
 
-          &:nth-child(1) {
-            width: 8rem;
-            height: 3rem;
-          }
+            img {
+              height: 4.3rem;
+              width: 5.3rem;
+            }
 
-          &:nth-child(2) {
-            width: 8rem;
-            height: 4rem;
+            &:nth-child(1) {
+              width: 8rem;
+              height: 3rem;
+
+              img {
+                height: 3rem;
+                width: 8rem;
+              }
+            }
+
+            &:nth-child(2) {
+              width: 8rem;
+              height: 4rem;
+
+              img {
+                height: 4rem;
+                width: 8rem;
+              }
+            }
           }
         }
       }
@@ -841,6 +888,15 @@ body {
       }
 
       .nav-mobile {
+        .mobile-link {
+          list-style: none;
+
+          li {
+            padding-top: 2rem;
+            text-align: center;
+          }
+        }
+
         position: fixed;
         display: flex;
         flex-direction: column;

@@ -41,7 +41,8 @@ body {
   text-transform: capitalize;
 }
 
-.header .nav-one {
+.header .nav-one .list-one {
+  list-style: none;
   display: flex;
   justify-content: end;
   gap: 1.5rem;
@@ -50,7 +51,7 @@ body {
   padding-right: 15rem;
 }
 
-.header .nav-one a {
+.header .nav-one .list-one a {
   color: #d3d3d3;
 }
 
@@ -60,7 +61,6 @@ body {
   align-items: center;
   background-color: #fff;
   padding: 1rem 15rem 1rem 12rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .header .navbar .logo {
@@ -78,24 +78,25 @@ body {
   display: none;
 }
 
-.header .navbar .nav-two {
+.header .navbar .nav-two .list-two {
+  list-style: none;
   display: flex;
   align-items: center;
   gap: 3rem;
   color: #3c3f46;
 }
 
-.header .navbar .nav-two a {
+.header .navbar .nav-two .list-two a {
   color: #3c3f46;
   font-size: 1rem;
 }
 
-.header .navbar .nav-two a:hover {
+.header .navbar .nav-two .list-two a:hover {
   color: #ec5242;
   letter-spacing: 0.1rem;
 }
 
-.header .navbar .nav-two .box {
+.header .navbar .nav-two .list-two .box {
   border: 4px solid #ec5242;
   margin-left: 3.5rem;
   font-size: 1.5rem;
@@ -113,9 +114,10 @@ body {
   gap: 1.5rem;
   padding: 9rem 15rem 9rem 12rem;
   background-image: url(/images/1569663.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/07/21/56/events-2608315_960_720.jpg);
+  background-image: url(https://media.istockphoto.com/id/521792915/vector/blue-musical-note-background.jpg?s=612x612&w=0&k=20&c=WEzXsH6vl9PdjApHOHCcv5T8vY0nlifx5rdbL1aUPLc=);
   background-size: cover;
   width: 100%;
-  height: 88vh;
 }
 
 .home .home-content .greeting {
@@ -271,7 +273,8 @@ body {
   background-color: #3c3f46;
 }
 
-.partner .partner-container .partner-logo {
+.partner .partner-container .partner-logo .list-logo {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -281,19 +284,34 @@ body {
   width: 100%;
 }
 
-.partner .partner-container .partner-logo img {
+.partner .partner-container .partner-logo .list-logo li {
   height: 6rem;
   width: 7rem;
 }
 
-.partner .partner-container .partner-logo img:nth-child(1) {
+.partner .partner-container .partner-logo .list-logo li img {
+  height: 6rem;
+  width: 7rem;
+}
+
+.partner .partner-container .partner-logo .list-logo li:nth-child(1) {
   width: 10rem;
   height: 4rem;
 }
 
-.partner .partner-container .partner-logo img:nth-child(2) {
+.partner .partner-container .partner-logo .list-logo li:nth-child(1) img {
+  height: 4rem;
+  width: 10rem;
+}
+
+.partner .partner-container .partner-logo .list-logo li:nth-child(2) {
   width: 10rem;
   height: 5rem;
+}
+
+.partner .partner-container .partner-logo .list-logo li:nth-child(2) img {
+  height: 4rem;
+  width: 10rem;
 }
 
 .footer .content {
@@ -514,11 +532,11 @@ body {
     padding: 0.5rem 10rem 0.5rem 7rem;
   }
 
-  .header .navbar .nav-two {
+  .header .navbar .nav-two .list-two {
     gap: 2rem;
   }
 
-  .header .navbar .nav-two .box {
+  .header .navbar .nav-two .list-two .box {
     font-size: 1.3rem;
     margin-left: 2rem;
   }
@@ -594,11 +612,11 @@ body {
     font-size: 1.7rem;
   }
 
-  .header .navbar .nav-two {
+  .header .navbar .nav-two .list-two {
     gap: 1.7rem;
   }
 
-  .header .navbar .nav-two .box {
+  .header .navbar .nav-two .list-two .box {
     font-size: 1.3rem;
     margin-left: 1.7rem;
   }
@@ -664,23 +682,38 @@ body {
     font-size: 0.8rem;
   }
 
-  .partner .partner-container .partner-logo {
+  .partner .partner-container .partner-logo .list-logo {
     gap: 1rem;
   }
 
-  .partner .partner-container .partner-logo img {
+  .partner .partner-container .partner-logo .list-logo li {
     height: 4.3rem;
     width: 5.3rem;
   }
 
-  .partner .partner-container .partner-logo img:nth-child(1) {
+  .partner .partner-container .partner-logo .list-logo li img {
+    height: 4.3rem;
+    width: 5.3rem;
+  }
+
+  .partner .partner-container .partner-logo .list-logo li:nth-child(1) {
     width: 8rem;
     height: 3rem;
   }
 
-  .partner .partner-container .partner-logo img:nth-child(2) {
+  .partner .partner-container .partner-logo .list-logo li:nth-child(1) img {
+    height: 3rem;
+    width: 8rem;
+  }
+
+  .partner .partner-container .partner-logo .list-logo li:nth-child(2) {
     width: 8rem;
     height: 4rem;
+  }
+
+  .partner .partner-container .partner-logo .list-logo li:nth-child(2) img {
+    height: 4rem;
+    width: 8rem;
   }
 
   .footer .content {
@@ -764,6 +797,15 @@ body {
     left: -100%;
     right: 0;
     background-color: #3c3f46;
+  }
+
+  .header .navbar .nav-mobile .mobile-link {
+    list-style: none;
+  }
+
+  .header .navbar .nav-mobile .mobile-link li {
+    padding-top: 2rem;
+    text-align: center;
   }
 
   .header .navbar .nav-mobile a {
