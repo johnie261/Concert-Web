@@ -59,7 +59,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #f3f3f3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.224);
   padding: 1rem 15rem 1rem 12rem;
 }
 
@@ -113,7 +114,7 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   padding: 9rem 15rem 9rem 12rem;
-  background-image: url(https://media.istockphoto.com/id/521792915/vector/blue-musical-note-background.jpg?s=612x612&w=0&k=20&c=WEzXsH6vl9PdjApHOHCcv5T8vY0nlifx5rdbL1aUPLc=);
+  background-image: url(/images/home-bg.jpg);
   background-size: cover;
   width: 100%;
 }
@@ -121,27 +122,36 @@ body {
 .home .home-content .greeting {
   font-size: 2.5rem;
   color: #ec5242;
+  animation: textLoads 1s ease-in-out;
 }
 
 .home .home-content .title {
   font-size: 5.2rem;
   font-weight: 900;
   line-height: 5rem;
-  color: rgba(153, 66, 55, 0.6);
-  color: #ec5242;
   background-image: url(/images/images.jpeg);
-  background-size: contain;
+  background-size: cover;
+  background-clip: inherit;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  animation: textLoads 1.2s ease-in-out;
 }
 
 .home .home-content .content-box {
-  background-color: rgba(244, 243, 243, 0.3333333333);
   padding: 0.7rem;
   margin: 1.3rem 0 1.5rem 0;
   font-size: 1rem;
   color: #4d4d4d;
-  border: 2px solid #fff;
+  background: #f3f3f3;
+  border: 3px solid #fff;
   max-width: 45rem;
+  animation: textLoads 1.4s ease-in-out;
+}
+
+.home .home-content .venue-details {
+  animation: textLoads 1.7s ease-in-out;
 }
 
 .home .home-content .venue-details .date {
@@ -523,8 +533,8 @@ body {
 }
 
 @media screen and (max-width: 1260px) {
-  .header .nav-one {
-    padding-right: 10rem;
+  .header .list-one {
+    padding-right: 5rem;
   }
 
   .header .navbar {
@@ -594,8 +604,7 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-  .header .nav-one {
-    padding-right: 5rem;
+  .header .list-one {
     gap: 1rem;
   }
 
