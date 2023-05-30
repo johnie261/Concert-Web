@@ -90,7 +90,7 @@ It display information about the venue, date, featuring artist and the days the 
 
 > Here you can see the live demo of my project:
 
-- [Live Demo Link](https://johnie261.github.io/Concert-Web/)
+- [Live Demo Link](https://concert-web.netlify.app/)
 
 >Here is a link to my loom video
 
