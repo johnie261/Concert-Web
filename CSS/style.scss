@@ -136,7 +136,6 @@ body {
     .greeting {
       font-size: 2.5rem;
       color: $red;
-      animation: textLoads 1s ease-in-out;
     }
 
     .title {
@@ -150,7 +149,6 @@ body {
       -webkit-text-fill-color: transparent;
       width: -moz-fit-content;
       width: fit-content;
-      animation: textLoads 1.2s ease-in-out;
     }
 
     .content-box {
@@ -161,12 +159,9 @@ body {
       background: #f3f3f3;
       border: 3px solid #fff;
       max-width: 45rem;
-      animation: textLoads 1.4s ease-in-out;
     }
 
     .venue-details {
-      animation: textLoads 1.7s ease-in-out;
-
       .date {
         font-size: 2rem;
         font-weight: 700;
